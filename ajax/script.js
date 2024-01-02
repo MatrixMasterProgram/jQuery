@@ -19,6 +19,7 @@ $(document).ready(function(){
 
         $.post(url, {title : title, body : body}).done(function (data) {
             console.log(data)
-        })
+            $('#result').append(`<h3> ${title} </h3> <p>${body}</p>`)
+           })        
     })
 });
